@@ -1,0 +1,90 @@
+﻿@model AgenciaViajesSpainIsDiferent.Models.Coche
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Coche</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.seguro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seguro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sillaniños)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sillaniños)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.opcionsilla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.opcionsilla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.compañia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.compañia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numerocalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numerocalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codigopostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigopostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numerocoches)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numerocoches)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idCoche }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

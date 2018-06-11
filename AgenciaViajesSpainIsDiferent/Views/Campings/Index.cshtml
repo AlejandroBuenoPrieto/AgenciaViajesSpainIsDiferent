@@ -1,0 +1,81 @@
+﻿@model IEnumerable<AgenciaViajesSpainIsDiferent.Models.Camping>
+
+@{
+    ViewBag.Title = "Campings";
+}
+
+<h2>Campings</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.calle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numerocalle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codigopostal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.piscina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numeroplazas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numerobungalows)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.calle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numerocalle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigopostal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.piscina)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numeroplazas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numerobungalows)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idCamping }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idCamping }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idCamping })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AgenciaViajesSpainIsDiferent.Models.Crucero>
+
+@{
+    ViewBag.Title = "Cruceros";
+}
+
+<h2>Cruceros</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tipobarco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.compañia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numeroplazas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duracion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipobarco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.compañia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numeroplazas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.duracion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idCrucero }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idCrucero }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idCrucero })
+        </td>
+    </tr>
+}
+
+</table>

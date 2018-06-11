@@ -1,0 +1,90 @@
+﻿@model AgenciaViajesSpainIsDiferent.Models.Camping
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Camping</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.provincia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.provincia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numerocalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numerocalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.codigopostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigopostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.piscina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.piscina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroplazas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numeroplazas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numerobungalows)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numerobungalows)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idCamping }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

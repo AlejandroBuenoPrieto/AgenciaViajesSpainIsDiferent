@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AgenciaViajesSpainIsDiferent.Models.Tren>
+
+@{
+    ViewBag.Title = "Trenes";
+}
+
+<h2>Trenes</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cafeteria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.compania)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numeroplazas)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cafeteria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.compania)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numeroplazas)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.trenid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.trenid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.trenid })
+        </td>
+    </tr>
+}
+
+</table>

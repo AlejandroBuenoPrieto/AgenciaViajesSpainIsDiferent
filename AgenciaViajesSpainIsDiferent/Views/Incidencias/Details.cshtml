@@ -1,0 +1,42 @@
+﻿@model AgenciaViajesSpainIsDiferent.Models.Incidencias
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Incidencias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.recurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.compañia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.compañia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idIncidencia }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

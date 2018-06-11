@@ -1,0 +1,58 @@
+﻿@model AgenciaViajesSpainIsDiferent.Models.Vuelo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vuelo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.lowcost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lowcost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.compañia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.compañia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroplazas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numeroplazas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idVuelo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
